@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    background-image: url("moradoybeige.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.contenedor-amarillo {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 80%;
+    max-width: 700px;
+
+    height: 70vh;
+    min-height: 200px;
+
+    padding: 25px;
+    box-sizing: border-box;
+
+    background: linear-gradient(
+        135deg,
+        #ffe58a,
+        #ffd34e,
+        #f5b82e
+    );
+
+    border: 3px solid #9b702b;
+    border-radius: 18px;
+
+    box-shadow: 0 5px 0 #755329,
+                0 8px 18px rgba(40, 20, 60, 0.3);
+
+    color: #49345e;
+    text-align: center;
+    font-family: cursive;
+
+    z-index: 10;
+
+    overflow: hidden;
+}
+
+
+.texto-carta {
+    width: 100%;
+    height: 100%;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    box-sizing: border-box;
+    padding-right: 10px;
+}
+
+
+.texto-carta h2 {
+    font-size: 23px;
+}
+
+.texto-carta p {
+    font-size: 17px;
+    line-height: 1.6;
+    text-align: left;
+    overflow-wrap: break-word;
+}
+
+
+.texto-carta::-webkit-scrollbar {
+    width: 7px;
+}
+
+.texto-carta::-webkit-scrollbar-track {
+    background: #e6bd58;
+    border-radius: 10px;
+}
+
+.texto-carta::-webkit-scrollbar-thumb {
+    background: #80603d;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 600px) {
+    .contenedor-amarillo {
+        width: 75%;
+        max-width: 320px;
+        padding: 15px;
+        height: 70vh;
+        min-height: 150px;
+    }
+
+    .texto-carta h2 {
+        font-size: 19px;
+    }
+
+    .texto-carta p {
+        font-size: 14px;
+    }
+}
+
+h2{
+    color:rgb(247, 65, 65);
+}
+
+.fechas{
+    color:brown;
+}
